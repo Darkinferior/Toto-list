@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+  background:linear-gradient(110deg,#f6d365,#fda085);
+  min-height: 80vh;
+  color: #fff;
+}
+
+header{
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+form{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 20vph;
+}
+
+form input,form button{
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: 0px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+form button{
+  color: #fda085;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.todo-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30vw;   
+}
+
+@media screen and (max-width: 600px){
+  .todo-list{
+    min-width: 80vw;
+  }
+}
+
+.todo{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin: 0.5rem;
+  background: #fff;
+  color: #222;
+  gap: 10px;
+}
+
+.todo li{
+  padding: 0.5rem;
+}
+
+.todo .todo-btn-container
+{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.todo button{
+  cursor: pointer;
+  height: 100;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.trash-bin,.check{
+  background-color: #ff6f47;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.check{
+  background: rgb(11, 212, 162);
+}
+
+.mark-complete{
+  text-decoration: line-through;
+}
+
+footer{
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  border-top: 2px solid black;
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+}
+
+footer div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media screen and (min-width: 900px)
+{
+  footer div{
+    width: 50vw;
+  }
+}
+
+footer button{
+  cursor: pointer;
+  background-color: #ff6f47;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 0;
+}
+
+.completed-filter{
+  background-color: rgb(11, 212, 162);
+}
+
+.all-filter{
+  background-color: rgb(11, 91, 212);
+}
